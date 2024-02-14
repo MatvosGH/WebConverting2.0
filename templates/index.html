@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>WebConverting</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="{{ url_for('static', filename='dist/style.css') }}">
+
+
+</head>
+
+<h1>WebConverting</h1>
+
+<body>
+<style>
+    body{
+         background-image: url("https://cojo.ru/wp-content/uploads/2022/12/zvezdnye-voiny-fon-1.webp")
+                      }
+
+
+</style>
+
+
+<!--<img src="pink">-->
+
+<p>   Это лучший способ конвертировать изображение в PDF с помощью этого онлайн-инструмента для работы с изображениями в PDF. Выберите изображения, которые вы хотите преобразовать в PDF, в онлайн-инструменте WebConverting. С помощью этого онлайн-инструмента для преобразования изображений в PDF можно быстро и просто преобразовать в PDF.</p>
+
+  <form method="post" class="file-uploader" action="/convert" enctype="multipart/form-data">
+  <div class="file-uploader__message-area">
+    <p>Select a file to upload</p>
+  </div>
+  <div class="file-chooser">
+    <input class="file-chooser__input" type="file" name="img" >
+  </div>
+  <input class="file-uploader__submit-button" type="submit" value="Upload">
+</form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="{{ url_for('static', filename='dist/script.js')}}"></script>
+
+
+
+</body>
+
+</html>
